@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kearney's Aluminum Foundry</title>
+    <meta name="description" content="Get in touch with Kearney's Aluminum Foundry in Fresno, CA. Find our address, phone, email, and a map for directions.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#1a1a1a] text-gray-200 font-sans">
+
+    <header class="fixed top-0 left-0 w-full z-50 p-6 md:p-8 flex justify-between items-center bg-transparent">
+        <a href="index.html" class="logo text-2xl font-extrabold tracking-widest uppercase flex items-center gap-3">
+            <i class="fas fa-cubes-stacked"></i> <span class="hidden md:block">Kearney's</span>
+        </a>
+        <nav>
+            <ul class="flex gap-6 md:gap-8 text-sm uppercase tracking-wider">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link active-link">Contact</a></li>
+                <li><a href="faq.html" class="nav-link">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-h-screen flex flex-col pt-32 md:pt-0 md:flex-row">
+            
+            <div class="w-full lg:w-1/2 p-6 md:p-12 lg:p-16 flex flex-col justify-center">
+                <div class="max-w-md mx-auto">
+                    <div class="wow animate__animated animate__fadeInLeft">
+                        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
+                           Get In<br>Touch
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-400">
+                            Whether it's a question, a quote, or a project proposal, we're ready to connect.
+                        </p>
+                    </div>
+
+                    <form class="mt-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="mb-6">
+                            <input type="text" id="name" name="name" class="contact-input" placeholder="YOUR NAME">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email" name="email" class="contact-input" placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" name="message" rows="5" class="contact-input" placeholder="YOUR MESSAGE"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="cta-button-primary w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+           <div class="w-full lg:w-1/2 flex flex-col">
+                <div class="w-full h-64 md:h-1/2 lg:h-2/3 google-map-container wow animate__animated animate__fadeIn">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.7580586850145!2d-119.74004212447007!3d36.70435137227459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945f76cf8e3471%3A0x59c744c2df2a45ab!2s2660%20S%20Dearing%20Ave%2C%20Fresno%2C%20CA%2093725%2C%20USA!5e0!3m2!1sen!2sng!4v1749793213722!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="w-full flex-grow p-8 md:p-12 lg:p-16 bg-[#111] wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="text-2xl font-bold uppercase tracking-wider text-[#ff6600]">Visit or Call</h3>
+                    <div class="mt-6 space-y-6 text-gray-300">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-xl text-[#ff6600] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Address</h4>
+                                <p class="text-gray-400">2660 South Dearing St<br>Fresno, CA 93725</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-phone text-xl text-[#ff6600] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <a href="tel:7697701312" class="text-gray-400 hover:text-white transition">769-770-1312</a>
+                            </div>
+                        </div>
+                         <div class="flex items-start gap-4">
+                            <i class="fas fa-envelope text-xl text-[#ff6600] mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:administrator@kearalumfoundry.com" class="text-gray-400 hover:text-white transition">administrator@kearalumfoundry.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script/script.js"></script>
+
+</body>
+</html>
