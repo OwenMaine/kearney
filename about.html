@@ -17,17 +17,23 @@
 
 <body class="bg-[#1a1a1a] text-gray-200 font-sans">
 
-    <header class="fixed top-0 left-0 w-full z-50 p-6 md:p-8 flex justify-between items-center bg-transparent">
-        <a href="index.html" class="logo text-2xl font-extrabold tracking-widest uppercase flex items-center gap-3">
+    <header class="fixed top-0 left-0 w-full z-50 p-6 md:p-8 flex justify-between items-center">
+        <a href="index.html" class="logo text-2xl font-extrabold tracking-widest uppercase flex items-center gap-3 z-50">
             <i class="fas fa-cubes-stacked"></i> <span class="hidden md:block">Kearney's</span>
         </a>
-        <nav>
-            <ul class="flex gap-6 md:gap-8 text-sm uppercase tracking-wider">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+
+        <button id="mobile-menu-button" class="md:hidden z-50 text-2xl">
+            <i class="fas fa-bars" id="menu-open-icon"></i>
+            <i class="fas fa-times hidden" id="menu-close-icon"></i>
+        </button>
+
+        <nav id="mobile-menu" class="mobile-nav-menu">
+            <ul class="flex flex-col md:flex-row gap-8 md:gap-8 text-2xl md:text-sm uppercase tracking-wider">
+                <li><a href="index.html" class="nav-link active-link">Home</a></li>
                 <li><a href="about.html" class="nav-link active-link">About</a></li>
-                <li><a href="products.html" class="nav-link">Products</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="faq.html" class="nav-link">FAQs</a></li>
+                <li><a href="products.html" class="nav-link active-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link active-link">Contact</a></li>
+                <li><a href="faq.html" class="nav-link active-link">FAQs</a></li>
             </ul>
         </nav>
     </header>
